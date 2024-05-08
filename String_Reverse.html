@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Reverse 2</title>
+<style>
+body
+{
+	background-color : gainsboro;
+}
+input
+{
+	background-color : yellow;
+	color : blue;
+	font-family : Consolas;
+}
+h2
+{
+	color : red;
+	background-color : ivory;
+	font-family :  Consolas;
+}
+</style>
+<script language="javascript">
+function reverseString()
+{
+	var str=document.getElementById("name").value;
+	var newString="";
+	
+	for(var i=str.length-1;i>=0;i--)
+	{
+		newString+=str[i];
+	}
+	
+	document.getElementById("rev").value=newString;
+}
+</script>
+</head>
+<body>
+<h2>Enter String<br><input type="text" name="" id="name" onkeyup="reverseString()"></h2>
+<h2>Reverse String<br><input type="text" name="" id="rev"></h2>
+</body> 
+</html>
